@@ -1,11 +1,4 @@
-from flask import Flask
-application = Flask(__name__)
+from app import app
 
-
-@application.route("/")
-def hello():
-    return "Hi Blue Sphere!"
-
-
-if __name__ == "__main__":
-    application.run()
+if __name__ == '__main__':
+    app.run()
